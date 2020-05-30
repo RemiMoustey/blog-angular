@@ -24,4 +24,12 @@ export class PostListItemComponent implements OnInit {
   onDontLoveIts() {
     this.postLoveIts--;
   }
+
+  getColor() {
+    if(this.postLoveIts < 0) {
+      return "#98403f";
+    } else if(this.postLoveIts > 0) {
+      return "#557c3d";
+    }
+  }
 }
